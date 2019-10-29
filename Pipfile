@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+isort = "*"
+mypy = "*"
+pycodestyle = "*"
+pydocstyle = "*"
+pylint = "*"
+mock = "*"
+pytest-cov = "*"
+pytest = "*"
+tox = "*"
+ipython = "*"
+parso = "*"
+PyYAML = "*"
+PyHamcrest = "*"
+restview = ">=2.8.1"
+rst = ">=0.1"
+pre-commit = "*"
+
+[packages]
+
+[scripts]
+test = "pytest"
+
+[requires]
+python_version = "3.8.0"
