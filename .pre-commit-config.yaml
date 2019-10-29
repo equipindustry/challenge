@@ -1,0 +1,57 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit
+    rev: v1.20.0
+    hooks:
+    -   id: validate_manifest
+-   repo: https://github.com/detailyang/pre-commit-shell
+    rev: 1.0.5
+    hooks:
+    -   id: shell-lint
+        exclude: (^provision/git/hooks/prepare-commit-msg$)
+        args:
+        - --exclude=SC1072,SC1073,SC2068
+-   repo: https://github.com/Lucas-C/pre-commit-hooks-markup
+    rev: v1.0.0
+    hooks:
+    -   id: rst-linter
+        exclude: (docs/*|tests/*)
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.4.0
+    hooks:
+    -   id: detect-private-key
+        files: ^(?!\.?git-crypt)
+    -   id: check-merge-conflict
+    -   id: trailing-whitespace
+        language_version: python3.8
+        files: ^tf|-|\.(py|tfvars|tf|tfenv|env|yml|yaml|pem|key|mock)$
+    -   id: end-of-file-fixer
+        files: ^tf|-|\.(py|env|yml|yaml|pem|key|mock)$
+    -   id: check-added-large-files
+        files: ^tf|-|\.(py|env|yml|yaml)$
+    -   id: check-case-conflict
+    -   id: check-json
+    -   id: pretty-format-json
+        args:
+        - --autofix
+    -   id: check-xml
+        language_version: python3.8
+    -   id: check-yaml
+        language_version: python3.8
+    -   id: check-case-conflict
+        language_version: python3.8
+    -   id: check-byte-order-marker
+        language_version: python3.8
+    -   id: check-ast
+        language_version: python3.8
+    -   id: debug-statements
+        language_version: python3.8
+    -   id: check-docstring-first
+    -   id: detect-aws-credentials
+    -   id: requirements-txt-fixer
+    -   id: check-symlinks
+    -   id: file-contents-sorter
+    -   id: fix-encoding-pragma
+    -   id: sort-simple-yaml
+    -   id: mixed-line-ending
+        fix: lr
+    -   id: check-executables-have-shebangs
