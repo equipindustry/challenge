@@ -1,6 +1,5 @@
 # Backend
 .PHONY: backend.help
-BACKEND_NETWORK = $(PROJECT)_network
 
 backend: backend.help
 
