@@ -20,6 +20,7 @@ PyHamcrest = "*"
 restview = ">=2.8.1"
 rst = ">=0.1"
 pre-commit = "*"
+proselint = "*"
 
 [packages]
 
