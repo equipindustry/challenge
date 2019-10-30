@@ -1,0 +1,133 @@
+{
+  "__export_date": "2019-10-30T16:29:28.351Z",
+  "__export_format": 4,
+  "__export_source": "insomnia.desktop.app:v7.0.3",
+  "_type": "export",
+  "resources": [
+    {
+      "_id": "req_d55f212bfe0248b0a8db20bcdd0c54f1",
+      "_type": "request",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "created": 1572452666264,
+      "description": "",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "ee3c19ea-8fe0-4ae5-8179-efcb3d521475"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572452666264,
+      "method": "DELETE",
+      "modified": 1572452829114,
+      "name": "auth/logout",
+      "parameters": [],
+      "parentId": "wrk_626516ddf7054df6897ab1b3f14b45de",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/auth/logout"
+    },
+    {
+      "_id": "wrk_626516ddf7054df6897ab1b3f14b45de",
+      "_type": "workspace",
+      "created": 1572451787625,
+      "description": "",
+      "modified": 1572451787625,
+      "name": "equipindustry-challenge",
+      "parentId": null
+    },
+    {
+      "_id": "req_6f56f45c4dab431296200c3a9220dabd",
+      "_type": "request",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n      \"name\": \"Elliot Alderson\",\n      \"email\": \"ellito@evilcorp.com\",\n      \"password\": \"mypassword\",\n      \"passwordConfirmation\": \"mypassword\"\n    }"
+      },
+      "created": 1572451843930,
+      "description": "",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572451843930,
+      "method": "POST",
+      "modified": 1572451914215,
+      "name": "auth/signup",
+      "parameters": [],
+      "parentId": "wrk_626516ddf7054df6897ab1b3f14b45de",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/auth/signup"
+    },
+    {
+      "_id": "req_dfb080eda0df4b1b8a0dc7906ded59d0",
+      "_type": "request",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"ellito@evilcorp.com\",\n\t\"password\": \"mypassword\"\n}"
+      },
+      "created": 1572451941886,
+      "description": "",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572141643659.5,
+      "method": "POST",
+      "modified": 1572451996438,
+      "name": "auth/login",
+      "parameters": [],
+      "parentId": "wrk_626516ddf7054df6897ab1b3f14b45de",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/auth/login"
+    },
+    {
+      "_id": "env_339cb6b9637176aa3360ae46ee205e467b0b1aa5",
+      "_type": "environment",
+      "color": null,
+      "created": 1572451787869,
+      "data": {},
+      "dataPropertyOrder": null,
+      "isPrivate": false,
+      "metaSortKey": 1572451787870,
+      "modified": 1572451787869,
+      "name": "Base Environment",
+      "parentId": "wrk_626516ddf7054df6897ab1b3f14b45de"
+    },
+    {
+      "_id": "jar_339cb6b9637176aa3360ae46ee205e467b0b1aa5",
+      "_type": "cookie_jar",
+      "cookies": [],
+      "created": 1572451787891,
+      "modified": 1572451787891,
+      "name": "Default Jar",
+      "parentId": "wrk_626516ddf7054df6897ab1b3f14b45de"
+    }
+  ]
+}
