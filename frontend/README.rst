@@ -59,7 +59,7 @@ controlling our files' versioning.
     cd frontend/
 
 If everything is correct, access the following URL:
-http://localhost:4000/.
+http://localhost:3000/.
 
 Built with
 ~~~~~~~~~~
