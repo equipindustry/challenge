@@ -30,6 +30,7 @@ ROOT_DIR=$(shell pwd)
 MESSAGE:=🍺️
 MESSAGE_HAPPY:="Done! ${MESSAGE}, Now Happy Hacking"
 SOURCE_DIR=$(ROOT_DIR)/
+FRONTEND_DIR=$(ROOT_DIR)/frontend
 FILE_README:=$(ROOT_DIR)/README.rst
 
 include provision/make/*.mk
@@ -42,6 +43,7 @@ help:
 	@echo '    clean                     remove files of build'
 	@echo '    setup                     install requirements'
 	@echo ''
+	@make backend.help
 	@make docs.help
 
 clean:
