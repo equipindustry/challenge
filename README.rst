@@ -1,7 +1,7 @@
 Challenge
 =========
 
-Hello :wave:
+Hello 👋
 
 This is our challenge for potential new developer team members.
 
@@ -9,7 +9,7 @@ Notes
 -----
 
 -  This should be fun! If you're stuck on a bug or something needs
-   clarification you can `email to Equip <mailto:hola@equipindustry.com?subject=Challenge>`__ for help.
+   clarification you can `email to Equip <mailto:tiago@equipindustry.com?subject=Challenge>`__ for help.
 -  If you prefer a functional style (or some other style of programming)
    feel free to switch things up to suit how you write best. We left the
    codebase intentionally small to support different styles/complete
