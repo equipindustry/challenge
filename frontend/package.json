@@ -1,0 +1,9 @@
+{
+  "license": "MIT",
+  "name": "equipindustry-react",
+  "scripts": {
+    "backend:setup": "cd backend && yarn install",
+    "backend:start": "cd backend && yarn start"
+  },
+  "version": "0.0.0"
+}
