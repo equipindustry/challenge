@@ -76,9 +76,14 @@ router.post("/create_join", (req, res) => {
             company.id,
             req.user.id
           ).then(() =>
-                 res.json({ id: company.id, name: company.name, ruc: company.ruc, website: company.website })
+                 res.json({
+                   id: company.id,
+                   name: company.name,
+                   ruc: company.ruc,
+                   website: company.website
+                 })
                 )
-    )
+         )
     .catch(err => {
       if (err && err.statusCode) {
         return res.status(err.statusCode).json({ error: err.error });
@@ -111,7 +116,20 @@ router.put("/:id", (req, res) => {
         company.id
       );
     })
-    .then(() => res.sendStatus(200))
+    .then(() =>
+          DB.get(
+            "SELECT companies.* FROM companies WHERE companies.id = ?",
+            req.params.id
+          )
+         )
+    .then(company =>
+          res.json({
+            id: company.id,
+            name: company.name,
+            ruc: company.ruc,
+            website: company.website
+          })
+         )
     .catch(err => {
       if (err && err.statusCode) {
         return res.status(err.statusCode).json({ error: err.error });
