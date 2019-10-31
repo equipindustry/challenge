@@ -114,7 +114,23 @@ router.put("/:id", (req, res) => {
         product.id
       );
     })
-    .then(() => res.sendStatus(200))
+    .then(() =>
+          DB.get(
+            "SELECT products.* FROM products INNER JOIN companies ON companies.id = products.company_id  WHERE products.company_id = ? AND products.id = ?",
+            req.user.company_id,
+            req.params.id
+          )
+         )
+    .then(product =>
+          res.json({
+            id: product.id,
+            companyId: product.company_id,
+            name: product.name,
+            sku: product.sku,
+            price: product.price,
+            discount: product.discount
+          })
+         )
     .catch(err => {
       if (err && err.statusCode) {
         return res.status(err.statusCode).json({ error: err.error });
