@@ -1,20 +1,20 @@
 React Backend Endpoints
 =======================
 
+
 This is the documentation for the JSON API to support your React
 frontend for EquipIndustry. The API is JSON REST, broken down into a few
 main sections:
 
--  ```Authentication`` <#authentication>`__
--  ```Companies`` <#companies>`__
--  ```Products`` <#products>`__
--  ```Users`` <#users>`__
+.. contents:: Table of Contents:
+    :local:
+
 
 All requests (except for signup and login) will need an
 ``Authorization`` header with the user's session ID.
 
-You receive this in the response to the ```signup`` <#signup>`__ and
-```login`` <#login>`__ requests under the ``sessionId`` key.
+You receive this in the response to the ``signup`` <#signup>`__ and
+``login`` <#login>`__ requests under the ``sessionId`` key.
 
 Additionally, as this is a JSON API, you should be attaching a JSON
 content type header as well. This is an example of the two header you
@@ -39,7 +39,7 @@ Authentication
 Signup
 ~~~~~~
 
-**``POST``**\ ``/auth/signup``
+**POST**\ ``/auth/signup``
 
 .. code:: javascript
 
@@ -59,7 +59,7 @@ Signup
 Login
 ~~~~~
 
-**``POST``**\ ``/auth/login``
+**POST**\ ``/auth/login``
 
 .. code:: javascript
 
@@ -77,7 +77,7 @@ Login
 Logout (delete session)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-**``DELETE``**\ ``/auth/logout``
+**DELETE**\ ``/auth/logout``
 
 .. code:: javascript
 
@@ -92,7 +92,7 @@ Companies
 List Companies
 ~~~~~~~~~~~~~~
 
-**``GET``**\ ``/companies``
+**GET**\ ``/companies``
 
 .. code:: javascript
 
@@ -109,7 +109,7 @@ List Companies
 Create and Join Company
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-**``POST``**\ ``/companies/create_join``
+**POST**\ ``/companies/create_join``
 
 .. code:: javascript
 
@@ -129,7 +129,7 @@ Create and Join Company
 Join Company
 ~~~~~~~~~~~~
 
-**``POST``**\ ``/companies/join``
+**POST**\ ``/companies/join``
 
 .. code:: javascript
 
@@ -148,7 +148,7 @@ Join Company
 Update Company
 ~~~~~~~~~~~~~~
 
-**``PUT``**\ ``/companies/:id``
+**PUT**\ ``/companies/:id``
 
 -  ``:id`` is the ID of the company to be updated.
 
@@ -166,7 +166,7 @@ Update Company
 Leave Company
 ~~~~~~~~~~~~~
 
-**``POST``**\ ``/companies/leave``
+**POST**\ ``/companies/leave``
 
 --------------
 
@@ -176,7 +176,7 @@ Products
 List Products
 ~~~~~~~~~~~~~
 
-**``GET``**\ ``/products``
+**GET**\ ``/products``
 
 .. code:: javascript
 
@@ -203,7 +203,7 @@ List Products
 Create Product
 ~~~~~~~~~~~~~~
 
-**``POST``**\ ``/products``
+**POST**\ ``/products``
 
 -  You can only create products for users within your company.
 
@@ -231,7 +231,7 @@ Create Product
 Update Product
 ~~~~~~~~~~~~~~
 
-**``PUT``**\ ``/products/:id``
+**PUT**\ ``/products/:id``
 
 -  ``:id`` is the ID of the product to be updated
 
@@ -257,7 +257,7 @@ Update Product
 Delete Product
 ~~~~~~~~~~~~~~
 
-**``DELETE``**\ ``/products/:id``
+**DELETE**\ ``/products/:id``
 
 -  ``:id`` is the ID of the product to be deleted
 
@@ -274,7 +274,7 @@ Users
 List Company Users
 ~~~~~~~~~~~~~~~~~~
 
-**``GET``**\ ``/users``
+**GET**\ ``/users``
 
 .. code:: javascript
 
@@ -297,7 +297,7 @@ List Company Users
 Get User Information
 ~~~~~~~~~~~~~~~~~~~~
 
-**``GET``**\ ``/users/me``
+**GET**\ ``/users/me``
 
 .. code:: javascript
 
@@ -312,7 +312,7 @@ Get User Information
 Update User Details
 ~~~~~~~~~~~~~~~~~~~
 
-**``PUT``**\ ``/users/me``
+**PUT**\ ``/users/me``
 
 .. code:: javascript
 
@@ -333,7 +333,7 @@ Update User Details
 Change Password
 ~~~~~~~~~~~~~~~
 
-**``PUT``**\ ``/users/me/change_password``
+**PUT**\ ``/users/me/change_password``
 
 .. code:: javascript
 
