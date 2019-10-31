@@ -16,6 +16,11 @@ Notes
    rewrites. Don't let how we've set things up get in the way of showing
    us your best work.
 
+Challenges:
+-----------
+
+* `Frontend`_
+
 Your Quest
 ----------
 
@@ -29,6 +34,8 @@ Great job! When you're all finished, open a PR and we'll review it 🙌
 
 |linkedin| |beacon|
 
+.. Links
+.. _`Frontend`: frontend/README.rst
 
 .. Footer:
 .. |linkedin| image:: http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png
