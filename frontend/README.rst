@@ -41,6 +41,10 @@ The following illustrations should only serve as an example. You do not
 need to follow the designs presented below. You can split functionality
 out to other pages. Just make sure it is all there.
 
+.. image:: backend/assets/images/equipindustry-challenge-database.png
+  :width: 100%
+  :alt: database equipindustry challenge
+
 An unauthenticated user should first be prompted to log in, sign up, or
 reset their password:
 
