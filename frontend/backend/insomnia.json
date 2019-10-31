@@ -1,9 +1,301 @@
 {
-  "__export_date": "2019-10-30T16:29:28.351Z",
+  "__export_date": "2019-10-31T15:29:18.207Z",
   "__export_format": 4,
   "__export_source": "insomnia.desktop.app:v7.0.3",
   "_type": "export",
   "resources": [
+    {
+      "_id": "req_3f60d2636e7a4d62b1e3e5d7c8b34360",
+      "_type": "request",
+      "authentication": {},
+      "body": {},
+      "created": 1572481419624,
+      "description": "",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "46f7e1ff-9900-4d4b-a068-fa421648d7a0"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572481419624,
+      "method": "GET",
+      "modified": 1572481446737,
+      "name": "list_products",
+      "parameters": [],
+      "parentId": "fld_35d956a9860d478eb5c6c8b03a78c08b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/products"
+    },
+    {
+      "_id": "fld_35d956a9860d478eb5c6c8b03a78c08b",
+      "_type": "request_group",
+      "created": 1572481384063,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1572481384063,
+      "modified": 1572481384063,
+      "name": "Products",
+      "parentId": "wrk_626516ddf7054df6897ab1b3f14b45de"
+    },
+    {
+      "_id": "wrk_626516ddf7054df6897ab1b3f14b45de",
+      "_type": "workspace",
+      "created": 1572451787625,
+      "description": "",
+      "modified": 1572451787625,
+      "name": "equipindustry-challenge",
+      "parentId": null
+    },
+    {
+      "_id": "req_a0d2f9e118b2412db346cdda6af9b299",
+      "_type": "request",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"companyId\": 1,\n\t\"name\": \"product 2\",\n\t\"sku\": \"DP18-Bk-T1\",\n\t\"price\": 100,\n\t\"discount\": 10\n}"
+      },
+      "created": 1572481466843,
+      "description": "",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "46f7e1ff-9900-4d4b-a068-fa421648d7a0"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572476834433.5,
+      "method": "POST",
+      "modified": 1572482670464,
+      "name": "create_product",
+      "parameters": [],
+      "parentId": "fld_35d956a9860d478eb5c6c8b03a78c08b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/products"
+    },
+    {
+      "_id": "req_55a059b2f82d42aba4e00182ae1b5a54",
+      "_type": "request",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"product 4\",\n\t\"sku\": \"DP18-Bk-T33\",\n\t\"price\": 100,\n\t\"discount\": 10\n}"
+      },
+      "created": 1572481521110,
+      "description": "",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "46f7e1ff-9900-4d4b-a068-fa421648d7a0"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572474541838.25,
+      "method": "PUT",
+      "modified": 1572484171217,
+      "name": "update_product",
+      "parameters": [],
+      "parentId": "fld_35d956a9860d478eb5c6c8b03a78c08b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/products/4"
+    },
+    {
+      "_id": "req_905f43a4f67140a88de2d932ba889c78",
+      "_type": "request",
+      "authentication": {},
+      "body": {},
+      "created": 1572472249243,
+      "description": "",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "46f7e1ff-9900-4d4b-a068-fa421648d7a0"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572472249243,
+      "method": "GET",
+      "modified": 1572481431306,
+      "name": "list",
+      "parameters": [],
+      "parentId": "fld_544de9da24264db2881080754fe39f59",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/companies"
+    },
+    {
+      "_id": "fld_544de9da24264db2881080754fe39f59",
+      "_type": "request_group",
+      "created": 1572472237328,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1572472237328,
+      "modified": 1572472237328,
+      "name": "companies",
+      "parentId": "wrk_626516ddf7054df6897ab1b3f14b45de"
+    },
+    {
+      "_id": "req_a4fc960a4a0d437eaa78cabede070d5f",
+      "_type": "request",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"EvilCorp\",\n\t\"ruc\": \"10987654320\"\n}"
+      },
+      "created": 1572472345115,
+      "description": "",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "46f7e1ff-9900-4d4b-a068-fa421648d7a0"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572462457753.5,
+      "method": "POST",
+      "modified": 1572476433474,
+      "name": "create_join",
+      "parameters": [],
+      "parentId": "fld_544de9da24264db2881080754fe39f59",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/companies/create_join"
+    },
+    {
+      "_id": "req_bd74b482c0764a459b989a22669ea5e4",
+      "_type": "request",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"companyId\": 1\n}"
+      },
+      "created": 1572472537176,
+      "description": "",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "e2a98e6a-2b8f-4248-b5d1-fafd73e6bd04"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572457562008.75,
+      "method": "POST",
+      "modified": 1572472577291,
+      "name": "join",
+      "parameters": [],
+      "parentId": "fld_544de9da24264db2881080754fe39f59",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/companies/join"
+    },
+    {
+      "_id": "req_2f242fba94874ed5bf6db38f576f5132",
+      "_type": "request",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"New Company\",\n\t\"ruc\": \"10987654321\",\n\t\"website\": \"https://evilcorp.com\"\n}"
+      },
+      "created": 1572483216286,
+      "description": "",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "e2a98e6a-2b8f-4248-b5d1-fafd73e6bd04"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572455114136.375,
+      "method": "PUT",
+      "modified": 1572484645517,
+      "name": "update",
+      "parameters": [],
+      "parentId": "fld_544de9da24264db2881080754fe39f59",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/companies/1"
+    },
+    {
+      "_id": "req_7fa85f565fef48e69ec47070e1599f8a",
+      "_type": "request",
+      "authentication": {},
+      "body": {},
+      "created": 1572483324617,
+      "description": "",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "e2a98e6a-2b8f-4248-b5d1-fafd73e6bd04"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572453890200.1875,
+      "method": "POST",
+      "modified": 1572483349857,
+      "name": "leave",
+      "parameters": [],
+      "parentId": "fld_544de9da24264db2881080754fe39f59",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/companies/leave"
+    },
     {
       "_id": "req_d55f212bfe0248b0a8db20bcdd0c54f1",
       "_type": "request",
@@ -21,13 +313,13 @@
         },
         {
           "name": "Authorization",
-          "value": "ee3c19ea-8fe0-4ae5-8179-efcb3d521475"
+          "value": "bb4bd7df-5796-4e28-b7e4-b2e03ea009a1"
         }
       ],
       "isPrivate": false,
       "metaSortKey": -1572452666264,
       "method": "DELETE",
-      "modified": 1572452829114,
+      "modified": 1572472117806,
       "name": "auth/logout",
       "parameters": [],
       "parentId": "wrk_626516ddf7054df6897ab1b3f14b45de",
@@ -39,21 +331,12 @@
       "url": "http://localhost:3000/auth/logout"
     },
     {
-      "_id": "wrk_626516ddf7054df6897ab1b3f14b45de",
-      "_type": "workspace",
-      "created": 1572451787625,
-      "description": "",
-      "modified": 1572451787625,
-      "name": "equipindustry-challenge",
-      "parentId": null
-    },
-    {
       "_id": "req_6f56f45c4dab431296200c3a9220dabd",
       "_type": "request",
       "authentication": {},
       "body": {
         "mimeType": "application/json",
-        "text": "{\n      \"name\": \"Elliot Alderson\",\n      \"email\": \"ellito@evilcorp.com\",\n      \"password\": \"mypassword\",\n      \"passwordConfirmation\": \"mypassword\"\n    }"
+        "text": "{\n\t\"name\": \"Elliot Alderson\",\n\t\"email\": \"elliot@evilcorp.com\",\n\t\"password\": \"mypassword\",\n\t\"passwordConfirmation\": \"mypassword\"\n}"
       },
       "created": 1572451843930,
       "description": "",
@@ -66,7 +349,7 @@
       "isPrivate": false,
       "metaSortKey": -1572451843930,
       "method": "POST",
-      "modified": 1572451914215,
+      "modified": 1572478437354,
       "name": "auth/signup",
       "parameters": [],
       "parentId": "wrk_626516ddf7054df6897ab1b3f14b45de",
@@ -76,6 +359,144 @@
       "settingSendCookies": true,
       "settingStoreCookies": true,
       "url": "http://localhost:3000/auth/signup"
+    },
+    {
+      "_id": "req_291f8c847f24461faeeb782979b63868",
+      "_type": "request",
+      "authentication": {},
+      "body": {},
+      "created": 1572483518900,
+      "description": "",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "46f7e1ff-9900-4d4b-a068-fa421648d7a0"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572472249243,
+      "method": "GET",
+      "modified": 1572483535930,
+      "name": "list",
+      "parameters": [],
+      "parentId": "fld_0bc08e166dc84edeb44b8ef0d5643537",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/users"
+    },
+    {
+      "_id": "fld_0bc08e166dc84edeb44b8ef0d5643537",
+      "_type": "request_group",
+      "created": 1572483518896,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1572151840360,
+      "modified": 1572483529957,
+      "name": "users",
+      "parentId": "wrk_626516ddf7054df6897ab1b3f14b45de"
+    },
+    {
+      "_id": "req_38f227b843554144880d8e103bada683",
+      "_type": "request",
+      "authentication": {},
+      "body": {},
+      "created": 1572483518907,
+      "description": "",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "e2a98e6a-2b8f-4248-b5d1-fafd73e6bd04"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572455114136.375,
+      "method": "PUT",
+      "modified": 1572483582919,
+      "name": "me",
+      "parameters": [],
+      "parentId": "fld_0bc08e166dc84edeb44b8ef0d5643537",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/users/me"
+    },
+    {
+      "_id": "req_3808aef15d7441648b5553d1cce52f64",
+      "_type": "request",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Israel\"\n}"
+      },
+      "created": 1572483518909,
+      "description": "",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "e2a98e6a-2b8f-4248-b5d1-fafd73e6bd04"
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572453890200.1875,
+      "method": "PUT",
+      "modified": 1572483679483,
+      "name": "update",
+      "parameters": [],
+      "parentId": "fld_0bc08e166dc84edeb44b8ef0d5643537",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/users/me"
+    },
+    {
+      "_id": "req_1439b45066694832b40deda0b62d4d88",
+      "_type": "request",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"oldPassword\": \"opensesame\",\n\t\"newPassword\": \"opensesame123\",\n\t\"newPasswordConfirmation\": \"opensesame123\"\n}"
+      },
+      "created": 1572483701211,
+      "description": "",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "e2a98e6a-2b8f-4248-b5d1-fafd73e6bd04"
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1572453278232.0938,
+      "method": "PUT",
+      "modified": 1572483746778,
+      "name": "change password",
+      "parameters": [],
+      "parentId": "fld_0bc08e166dc84edeb44b8ef0d5643537",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/users/me/change_password"
     },
     {
       "_id": "req_dfb080eda0df4b1b8a0dc7906ded59d0",
