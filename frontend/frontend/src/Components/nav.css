@@ -1,0 +1,71 @@
+.App-header{  
+    color: #2699FB;
+    padding: 10px 35px;
+    position: relative;
+    z-index: 20;
+  }
+
+  .App-header.login-header{
+    color: white;
+    background-color: #2699FB;
+  }
+  .App-header.login-header a{
+    color: white;
+  }
+  .nav-login{
+    display: flex;
+    justify-content:space-between;
+  
+  }
+  .inner-user a:hover{
+    text-decoration: underline;
+  }
+  a{
+    text-decoration: none;
+    color: #2699FB;
+  }  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-menu{
+    display: flex;
+    padding: 0;
+  }
+
+.nav-menu li{
+    list-style: none;
+    margin: 15px;
+  }
+  .nav-menu__links{
+      text-decoration: none;
+      color: #2699FB;
+      
+  }
+
+  .search-bar{
+    position: relative;
+}
+.search-bar i{
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+  .search-bar input{
+      outline: none;
+      border-radius: 25px;
+      border: 1px solid #2699FB;
+      height: 40px;
+      min-width: 300px;
+      padding: 0 15px;
+      cursor: text;
+     
+  }
+  .search-bar input::placeholder{
+      color: #2699FB;
+  }
+  
+
+  

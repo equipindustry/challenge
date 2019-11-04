@@ -1,0 +1,15 @@
+.home.products{
+    padding-top: 203px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.section-company{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.section-products{
+    background-color: #fff;
+    width: 100%;
+}

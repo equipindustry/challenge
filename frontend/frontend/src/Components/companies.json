@@ -1,0 +1,20 @@
+{
+    "companies": [
+        {
+            "title": "Chemifabrik SAC",
+            "description": "Lideres en pinturas"
+        },
+        {
+            "title": "Parteequipos SAC",
+            "description": "Lideres en repuestos"
+        },
+        {
+            "title": "Aquatec SAC",
+            "description": "Lideres en repuestos"
+        },
+        {
+            "title": "Other company SAC",
+            "description": "Lideres en repuestos"
+        }
+    ]
+}

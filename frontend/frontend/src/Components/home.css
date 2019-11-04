@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+.home{
+    background-color: #F1F9FF;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 103px;
+    padding: 0 100px 0 100px;
+    display: flex;
+    align-items: center;
+    color: #2699FB
+}
+.col-left{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px;
+    flex-basis: 65%;
+}
+.box{
+    background-color: #fff;
+    height: 200px;
+    padding: 15px;
+    
+}
+.box.uno h4{
+    max-width: 250px;
+}
+.box .inner-user{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.dos{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+    height: 250px;
+}
+.dos h4{
+    font-size: 35px;
+    font-weight: 400;
+    font-family: serif;
+    letter-spacing: 2px;
+
+}
+.dos .add-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 30px;
+}
+.dos .add-btn small{
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+.box.dos {
+    padding-right: 50px;
+}
+
+.col-right{
+    flex-basis: 35%;
+    padding-left: 80px;
+}
+.col-right.col-company{
+    flex-basis: unset;
+}
+.start-btn{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.start-btn span{
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+
+}
