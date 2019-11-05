@@ -1,7 +1,8 @@
 .App-header{  
     color: #2699FB;
     padding: 10px 35px;
-    position: relative;
+    position: fixed;
+    width: 100%;
     z-index: 20;
   }
 

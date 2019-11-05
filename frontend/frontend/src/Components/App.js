@@ -15,6 +15,7 @@ import './login.css';
 import Register from './Register'
 import Products from './Products';
 import './products.css';
+import CreateProduct from './CreateProduct'
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
         <Route exact path="/Register" component={Register} />
         <Route path="/updateinformacion" component={NavMenu} />
         <Route exact path="/updateinformacion" component={UpdateCompany} />
+        <Route path="/CreateProduct" component={NavMenu} />
+        <Route exact path="/CreateProduct" component={CreateProduct} />
+
 
       </div>
     </BrowserRouter>

@@ -44,7 +44,7 @@ class RegisterBox extends React.Component {
         this.setState((prevState) => {
             let newArr = []
             for (let err of prevState.errors) {
-                if (elem != err.elem) {
+                if (elem !== err.elem) {
                     newArr.push(err)
                 }
             }
@@ -65,9 +65,9 @@ class RegisterBox extends React.Component {
         this.clearValidationErr('password')
     }
     submitRegister(e) {
-        if (this.state.username == "") {
+        if (this.state.username === "") {
             this.showValidationErr('username', 'Username cannot be empty')
-        } if (this.state.email == "") {
+        } if (this.state.email === "") {
             this.showValidationErr('email', 'Email cannot be empty')
         } if (this.state.password == "") {
             this.showValidationErr('password', 'Password cannot be empty')
@@ -79,11 +79,11 @@ class RegisterBox extends React.Component {
 
         let usernameErr = null, passwordErr = null, emailErr = null;
         for (let err of this.state.errors) {
-            if (err.elem == 'username') {
+            if (err.elem === 'username') {
                 usernameErr = err.msg
-            } if (err.elem == 'password') {
+            } if (err.elem === 'password') {
                 passwordErr = err.msg
-            } if (err.elem == 'email') {
+            } if (err.elem === 'email') {
                 emailErr = err.msg
             }
 

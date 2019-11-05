@@ -1,7 +1,11 @@
+ul li{
+    list-style: none;
+}
 .home.products{
     padding-top: 203px;
     align-items: flex-start;
     flex-direction: column;
+    overflow: scroll;
 }
 .section-company{
     display: flex;
@@ -12,4 +16,111 @@
 .section-products{
     background-color: #fff;
     width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    padding: 0 100px 50px 100px;
+}
+.section-products-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    align-items: center;
+}
+.section-products-header h3{
+    font-size: 22px;
+}
+.section-products-header .btn{
+    font-size: 14px;
+    font-weight: bold;
+   
+
+
+}
+.container-product{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
+
+}
+.single-product{
+    background-color: #F1F9FF;
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+    
+}
+.single-product .discount{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2699FB;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.single-product .img{
+    width: 100%;
+    height: 200px;
+}
+.inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.inner h5{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.inner p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.single-product .inner .btn{
+    margin-bottom: 15px;
+}
+
+.CreateProduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #2699FB;
+    padding-top: 150px;
+}
+.CreateProduct p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.CreateProduct h2{
+    margin-top: 0;
+    font-family: serif;
+    font-size: 34px;
+    font-weight: 500;
+    
+}
+.CreateProduct form{
+    max-width: 500px;
+}
+.doble-input{
+    display: flex;
+}
+.doble-input .input-group input{
+    min-width: unset;
+}
+.doble-input .input-group +.input-group{
+    margin-left: 15px;
+}
+.CreateProduct form .btn-product{
+    width: 100%;
+    padding: 15px;
 }
