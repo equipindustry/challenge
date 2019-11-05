@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "name": "Product",
+            "price": "$200.00",
+            "sku": "DP18-Bk-T",
+            "discount": "-20%"
+        },
+        {
+            "name": "Product",
+            "price": "$200.00",
+            "sku": "DP18-Bk-T",
+            "discount": "-20%"
+        },
+        {
+            "name": "Product",
+            "price": "$200.00",
+            "sku": "DP18-Bk-T",
+            "discount": "-20%"
+        },
+        {
+            "name": "Product",
+            "price": "$200.00",
+            "sku": "DP18-Bk-T",
+            "discount": "-20%"
+        }
+    ]
+}

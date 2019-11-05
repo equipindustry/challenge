@@ -1,3 +1,6 @@
+.App2{
+    padding-top: 150px;
+}
 .company{
     display: flex;
     justify-content: space-between;
@@ -5,9 +8,10 @@
     align-items: center;
 }
 
-.col-left .inner{
+.company .col-left .inner{
     width: 400px;
     color: #2699FB;
+    display: block;
 }
 .inner h2{
     font-size: 22px;
