@@ -1,5 +1,7 @@
 .App2{
     padding-top: 150px;
+    height: 100vh;
+    overflow-y: scroll;
 }
 .company{
     display: flex;
@@ -37,7 +39,7 @@
     display: grid;
     grid-template-columns: repeat(4,1fr) ;
     grid-gap: 40px;
-    padding: 40px 150px 0 150px;
+    padding: 40px 150px;
 }
 .container .card img{
     width: 100%;

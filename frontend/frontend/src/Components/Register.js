@@ -69,7 +69,7 @@ class RegisterBox extends React.Component {
             this.showValidationErr('username', 'Username cannot be empty')
         } if (this.state.email === "") {
             this.showValidationErr('email', 'Email cannot be empty')
-        } if (this.state.password == "") {
+        } if (this.state.password === "") {
             this.showValidationErr('password', 'Password cannot be empty')
         }
 

@@ -11,7 +11,7 @@ function NavHome() {
                 </div>
 
                 <ul className="nav-menu">
-                    <li><a className="nav-menu__links" href="#">PRODUCTS</a></li>
+                    <li><NavLink exact to="/Products" className="nav-menu__links" >PRODUCTS</NavLink></li>
                     <li><NavLink exact to="/Companies" className="nav-menu__links" >COMPANIES</NavLink></li>
 
                     <li><NavLink exact to="/Login" className="nav-menu__links" >LOGIN</NavLink></li>

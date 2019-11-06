@@ -21,20 +21,22 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+
         <Route exact path="/" component={NavHome} />
         <Route exact path="/" component={Home} />
         <Route path="/Companies" component={NavMenu} />
-        <Route exact path="/Companies" component={ChooseCompany} />
+        <Route path="/Companies" component={ChooseCompany} />
         <Route path="/Products" component={NavMenu} />
         <Route path="/Products" component={Products} />
-        <Route exact path="/Login" component={NavLogin} />
-        <Route exact path="/Register" component={NavLogin} />
-        <Route exact path="/Login" component={Login} />
-        <Route exact path="/Register" component={Register} />
+        <Route path="/Login" component={NavLogin} />
+        <Route path="/Register" component={NavLogin} />
+        <Route path="/Login" component={Login} />
+        <Route path="/Register" component={Register} />
         <Route path="/updateinformacion" component={NavMenu} />
-        <Route exact path="/updateinformacion" component={UpdateCompany} />
+        <Route path="/updateinformacion" component={UpdateCompany} />
         <Route path="/CreateProduct" component={NavMenu} />
         <Route exact path="/CreateProduct" component={CreateProduct} />
+
 
 
       </div>

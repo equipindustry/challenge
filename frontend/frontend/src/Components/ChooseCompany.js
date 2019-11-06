@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { NavLink, Redirect } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
+import UpdateCompany from './UpdateCompany'
 import { companies } from './companies.json';
 import img from "../img/img.png";
 
@@ -15,8 +16,21 @@ class ChooseCompany extends Component {
             loggedIn = false
         }
         this.state = {
-            companies
+            companies,
+            isCompaniesOpen: true, isUpdateOpen: false
         }
+        this.addCompany = this.addCompany.bind(this)
+    }
+    showCompaniesBox() {
+        this.setState({ isCompaniesOpen: true, isUpdateOpen: false })
+    }
+    showUpdateBox() {
+        this.setState({ isUpdateOpen: true, isCompaniesOpen: false })
+    }
+    addCompany(company) {
+        this.setState({
+            companies: [...this.state.companies, company]
+        })
     }
     render() {
         if (this.state.loggedIn === false) {
@@ -24,13 +38,13 @@ class ChooseCompany extends Component {
         }
         const companies = this.state.companies.map((company, i) => {
             return (
-                <article className="card">
+                <article key={i} className="card">
                     <img src={img} />
                     <div className="inner">
                         <h3>{company.title}</h3>
                         <p>{company.description}</p>
 
-                        <NavLink exact to="/Products" className="btn btn-card">Choose Company</NavLink>
+                        <Link to="/Products" className="btn btn-card">Choose Company</Link>
                     </div>
                 </article >
 
@@ -47,12 +61,17 @@ class ChooseCompany extends Component {
                         </div>
                     </div>
                     <div className="col-right col-company">
-                        <NavLink exact to="/updateinformacion" className="btn">CREATE NEW COMPANY</NavLink>
+                        <button className={"btn " + (this.state.isUpdateOpen ? "hide" : "")} onClick={this.showUpdateBox.bind(this)}>CREATE NEW COMPANY</button>
+                        <button className={"btn " + (this.state.isCompaniesOpen ? "hide" : "")} onClick={this.showCompaniesBox.bind(this)} >SEE COMPANIES</button>
                     </div>
                 </section>
 
-                <div className="container">
-                    {companies}
+                <div className="div">
+                    {this.state.isCompaniesOpen && <div className="container">
+                        {companies}
+                    </div>}
+
+                    {this.state.isUpdateOpen && <UpdateCompany onAddCompany={this.addCompany} />}
                 </div>
             </div>
 

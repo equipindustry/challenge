@@ -69,7 +69,7 @@ class LoginBox extends React.Component {
     submitFom(e) {
         e.preventDefault()
         const { email, password } = this.state
-        if (email === 'email@gmail.com' && password === '123456') {
+        if (email === 'elliot@evilcorp.com' && password === 'mypassword') {
 
             localStorage.setItem("token", "asdf1gf56a4gdfh6uy4im")
             this.setState({

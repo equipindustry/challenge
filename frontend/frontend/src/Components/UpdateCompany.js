@@ -5,43 +5,56 @@ import React, { Component } from 'react';
 class UpdateCompany extends Component {
     constructor(props) {
         super(props);
-        this.onSubmit = this.onSubmit.bind(this);
+        this.state = {
+            title: '',
+            ruc: '',
+            description: 'Lideres en repuestos'
+        }
+        this.handleInput = this.handleInput.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
-
-    onSubmit(e) {
+    handleInput(e) {
+        const { value, name } = e.target
+        this.setState({
+            [name]: value
+        })
+    }
+    handleSubmit(e) {
         e.preventDefault()
-        var title = this.title;
-        var ruc = this.ruc;
-        console.log(title.value)
-        console.log(ruc.value)
+        this.props.onAddCompany(this.state)
+
     }
     render() {
         return (
-            <div className="App3" >
-                <section className="update" >
 
-                    <div className="head-center">
-                        <h2>My company</h2>
-                        <p>Update informacion</p>
+            <section className="update" >
+
+                <div className="head-center">
+                    <h2>My company</h2>
+                    <p>Update informacion</p>
+                </div>
+                <form onSubmit={this.handleSubmit}>
+                    <div className="input-group">
+                        <label htmlFor="nameCompany">NAME COMPANY</label>
+                        <input className="company-input" name="title"
+                            onChange={this.handleInput}
+                            type="text" />
                     </div>
-                    <form>
-                        <div className="input-group">
-                            <label>NAME COMPANY</label>
-                            <input className="company-input" ref={(c) => this.title = c} type="text" name="title" />
-                        </div>
-                        <div className="input-group">
-                            <label>RUC</label>
-                            <input className="company-input" ref={(c) => this.ruc = c} min="14" max="15" name="ruc" type="number" />
-                        </div>
+                    <div className="input-group">
+                        <label htmlFor="rucNumber">RUC</label>
+                        <input className="company-input" name="ruc"
+                            onChange={this.handleInput}
+                            type="number" />
+                    </div>
 
-                        <button className="btn update-btn" onClick={this.onSubmit}>UPDATE NOW</button>
+                    <button className="btn update-btn" >UPDATE NOW</button>
 
-                    </form>
+                </form>
 
-                </section>
+            </section>
 
 
-            </div>
+
 
 
         )

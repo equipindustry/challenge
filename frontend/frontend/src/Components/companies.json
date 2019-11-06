@@ -2,18 +2,22 @@
     "companies": [
         {
             "title": "Chemifabrik SAC",
+            "ruc": "12345678901",
             "description": "Lideres en pinturas"
         },
         {
             "title": "Parteequipos SAC",
+            "ruc": "12345678901",
             "description": "Lideres en repuestos"
         },
         {
             "title": "Aquatec SAC",
+            "ruc": "12345678901",
             "description": "Lideres en repuestos"
         },
         {
             "title": "Other company SAC",
+            "ruc": "12345678901",
             "description": "Lideres en repuestos"
         }
     ]

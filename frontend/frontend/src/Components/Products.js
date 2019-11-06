@@ -4,13 +4,21 @@ import CreateProduct from './CreateProduct.js';
 
 
 
+
 class Products extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            products
+            products,
+            isProductsOpen: true, isCreateOpen: false
         }
         this.addProduct = this.addProduct.bind(this)
+    }
+    showCreateBox() {
+        this.setState({ isProductsOpen: true, isCreateOpen: false })
+    }
+    showProductsBox() {
+        this.setState({ isCreateOpen: true, isProductsOpen: false })
     }
     addProduct(product) {
         this.setState({
@@ -39,6 +47,7 @@ class Products extends Component {
                 </li>
             )
         })
+
         return (
             <section className="home products">
                 <div className="section-company">
@@ -60,17 +69,20 @@ class Products extends Component {
                 <div className="section-products">
                     <div className="section-products-header">
                         <h3>All Products</h3>
-                        <button to='/CreateProduct' className="btn">Create Product</button>
+                        <button to='/CreateProduct' className={"btn " + (this.state.isProductsOpen ? "hide" : "")} onClick={this.showCreateBox.bind(this)} >See Products</button>
+                        <button to='/CreateProduct' className={"btn " + (this.state.isCreateOpen ? "hide" : "")} onClick={this.showProductsBox.bind(this)} > Create Product</button>
                     </div>
 
 
-                    <CreateProduct onAddProduct={this.addProduct} />
 
 
-                    <ul className="container-product">
+                    {this.state.isProductsOpen && <ul className="container-product">
                         {products}
 
-                    </ul>
+                    </ul>}
+                    {this.state.isCreateOpen && <CreateProduct onAddProduct={this.addProduct} />}
+
+
 
                 </div>
             </section>
