@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 function NavHome() {
     return (
-        <header className="App-header">
+        <header className="App-header nav-home">
             <nav>
                 <div className="logo">
                     <NavLink exact to="/"><h1>XD</h1></NavLink>

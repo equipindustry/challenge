@@ -12,7 +12,7 @@ function NavLogin() {
                     <NavLink exact to="/"><h1>XD</h1></NavLink>
                 </div>
                 <ul className="nav-menu">
-                    <li><a className="nav-menu__links" href="#"><i className="fa fa-user"></i></a></li>
+                    <li><NavLink to="/Register" className="nav-menu__links" href="#"><i className="fa fa-user"></i></NavLink></li>
                 </ul>
             </nav>
         </header>

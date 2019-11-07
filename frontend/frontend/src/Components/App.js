@@ -1,4 +1,5 @@
 import React from 'react';
+import UpdateProfile from './UpdateProfile'
 import { BrowserRouter, Route } from "react-router-dom";
 import NavMenu from './NavMenu';
 import NavHome from './NavHome';
@@ -36,6 +37,8 @@ function App() {
         <Route path="/updateinformacion" component={UpdateCompany} />
         <Route path="/CreateProduct" component={NavMenu} />
         <Route exact path="/CreateProduct" component={CreateProduct} />
+        <Route path="/UpdateProfile" component={NavMenu} />
+        <Route path="/UpdateProfile" component={UpdateProfile} />
 
 
 

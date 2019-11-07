@@ -5,20 +5,21 @@ ul li{
     padding-top: 203px;
     align-items: flex-start;
     flex-direction: column;
-    overflow: scroll;
+    padding: 203px 0 0 0;
+    height: 100%;
+
 }
 .section-company{
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    margin-bottom: 110px;
+    padding: 0 100px;
 }
 .section-products{
     background-color: #fff;
     width: 100%;
-    position: absolute;
-    top: 60%;
-    left: 0;
     padding: 0 100px 50px 100px;
 }
 .section-products-header{
@@ -97,6 +98,9 @@ ul li{
     padding-top: 10px;
     padding-bottom: 50px;
 }
+.CreateProduct.u-profile{
+    padding-top: 183px;
+}
 .CreateProduct p{
     font-size: 16px;
     font-weight: bold;
@@ -124,4 +128,11 @@ ul li{
 .CreateProduct form .btn-product{
     width: 100%;
     padding: 15px;
+}
+
+.CreateProduct.u-profile .change-link{
+    margin-top: 15px;
+    display: block;
+    text-align: right;
+    
 }

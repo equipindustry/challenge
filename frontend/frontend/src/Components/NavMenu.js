@@ -13,9 +13,9 @@ function NavMenu() {
                     <i className="fa fa-search"></i>
                 </div>
                 <ul className="nav-menu">
-                    <li><a className="nav-menu__links" href="#">PRODUCTS</a></li>
+                    <li><NavLink to="Products" className="nav-menu__links" href="#">PRODUCTS</NavLink></li>
                     <li><NavLink exact to="/Companies" className="nav-menu__links" >COMPANIES</NavLink></li>
-                    <li><a className="nav-menu__links" href="#">USER_NAME</a></li>
+                    <li><NavLink to="/UpdateProfile" className="nav-menu__links" href="#">USER_NAME</NavLink></li>
                     <li><a className="nav-menu__links" href="#"><i className="fa fa-user"></i></a></li>
                 </ul>
             </nav>
@@ -25,3 +25,5 @@ function NavMenu() {
 }
 
 export default NavMenu;
+
+
