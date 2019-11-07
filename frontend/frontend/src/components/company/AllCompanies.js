@@ -84,7 +84,7 @@ export default class AllCompanies extends Component{
                     </div>
                     
                         { this.state.companies.map(company => {
-                            if(this.state.companyid == company.id){
+                            if(this.state.companyid === company.id){
                                 return <div className="col-12 col-md-6 col-lg-4 col-xl-4 text-center" key={company.id}>
                                 <div className="card mb-4 box-shadow cardHeight">
                                 <div className="card-header">

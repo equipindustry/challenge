@@ -409,3 +409,8 @@ transition: all 0.5s;
     .cardHeight{
         height: 290px;
     }
+
+    .titData{
+        font-size:16px;
+        font-weight: 600;   
+    }
