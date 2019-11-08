@@ -22,7 +22,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-
         <Route exact path="/" component={NavHome} />
         <Route exact path="/" component={Home} />
         <Route path="/Companies" component={NavMenu} />
@@ -39,9 +38,6 @@ function App() {
         <Route exact path="/CreateProduct" component={CreateProduct} />
         <Route path="/UpdateProfile" component={NavMenu} />
         <Route path="/UpdateProfile" component={UpdateProfile} />
-
-
-
       </div>
     </BrowserRouter>
   );

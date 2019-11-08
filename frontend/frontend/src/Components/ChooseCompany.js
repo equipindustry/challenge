@@ -10,8 +10,8 @@ class ChooseCompany extends Component {
     constructor() {
         super();
         const token = localStorage.getItem("token")
-        let loggedIn = true
 
+        let loggedIn = true
         if (token == null) {
             loggedIn = false
         }
@@ -39,7 +39,7 @@ class ChooseCompany extends Component {
         const companies = this.state.companies.map((company, i) => {
             return (
                 <article key={i} className="card">
-                    <img src={img} />
+                    <img alt="any-img" src={img} />
                     <div className="inner">
                         <h3>{company.title}</h3>
                         <p>{company.description}</p>

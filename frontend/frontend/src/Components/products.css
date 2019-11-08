@@ -1,6 +1,4 @@
-ul li{
-    list-style: none;
-}
+
 .home.products{
     padding-top: 203px;
     align-items: flex-start;
@@ -34,23 +32,19 @@ ul li{
 .section-products-header .btn{
     font-size: 14px;
     font-weight: bold;
-   
-
 
 }
 .container-product{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 35px;
-
 }
 .single-product{
     background-color: #F1F9FF;
     position: relative;
     display: flex;
-
     flex-direction: column;
-    
+  
 }
 .single-product .discount{
     position: absolute;
@@ -133,6 +127,5 @@ ul li{
 .CreateProduct.u-profile .change-link{
     margin-top: 15px;
     display: block;
-    text-align: right;
-    
+    text-align: right; 
 }

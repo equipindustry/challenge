@@ -12,7 +12,7 @@ class Register extends React.Component {
     render() {
         return (
             <div className="root-container">
-                <div className="img-container"> <img src={img} /></div>
+                <div className="img-container"> <img alt="any-img" src={img} /></div>
                 <div className="login">
 
                     <div className="box-container">
