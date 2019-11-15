@@ -6,7 +6,7 @@ function NavMenu() {
         <header className="App-header">
             <nav>
                 <div className="logo">
-                    <NavLink exact to="/"><h1>XD</h1></NavLink>
+                    <NavLink className="link" exact to="/"><h1>XD</h1></NavLink>
                 </div>
                 <div className="search-bar">
                     <input type="search" placeholder="Search product" />
@@ -15,7 +15,7 @@ function NavMenu() {
                 <ul className="nav-menu">
                     <li><NavLink to="Products" className="nav-menu__links" href="#">PRODUCTS</NavLink></li>
                     <li><NavLink exact to="/Companies" className="nav-menu__links" >COMPANIES</NavLink></li>
-                    <li><NavLink to="/UpdateProfile" className="nav-menu__links" href="#">USER_NAME</NavLink></li>
+                    <li><NavLink to="/Profile" className="nav-menu__links" href="#">USER_NAME</NavLink></li>
                     <li><a className="nav-menu__links" href="#"><i className="fa fa-user"></i></a></li>
                 </ul>
             </nav>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import img from "../img/img.png";
+import img from "../../img/img.png";
 
 
 class Register extends React.Component {
@@ -95,7 +95,7 @@ class RegisterBox extends React.Component {
                     <p>Access to platform</p>
                     <h3>Register</h3>
                 </div>
-                <div className="box-login">
+                <form className="box-login">
                     <div className="input-group">
                         <label htmlFor="username">NAME</label>
                         <input type="text" name="username" className="login-input" placeholder="Name" onChange={this.onUsernameChange.bind(this)} />
@@ -109,19 +109,19 @@ class RegisterBox extends React.Component {
 
                     <div className="input-group">
                         <label htmlFor="password">PASSWORD</label>
-                        <input type="password" name="password" className="login-input" placeholder="Password" onChange={this.onPasswordChange.bind(this)} />
+                        <input type="password" autoComplete='password' name="password" className="login-input" placeholder="Password" onChange={this.onPasswordChange.bind(this)} />
                         <small className="danger-error">{passwordErr ? passwordErr : ""}</small>
 
                     </div>
                     <div className="input-group">
                         <label htmlFor="password">PASSWORD CONFIRMATION</label>
-                        <input type="password" name="password" className="login-input" placeholder="Password" onChange={this.onPasswordChange.bind(this)} />
+                        <input type="password" autoComplete='password' name="password-confirmation" className="login-input" placeholder="Confirm password" onChange={this.onPasswordChange.bind(this)} />
                         <small className="danger-error">{passwordErr ? passwordErr : ""}</small>
 
                     </div>
 
                     <button type="button" className="login-btn btn" onClick={this.submitRegister.bind(this)}>Register</button>
-                </div>
+                </form>
             </div>
         )
     }

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import UpdateCompany from './UpdateCompany'
 import { companies } from './companies.json';
-import img from "../img/img.png";
+import img from "../../img/img.png";
+import '../styles/updatecompany.css'
 
 
 

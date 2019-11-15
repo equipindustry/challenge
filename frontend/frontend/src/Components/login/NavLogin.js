@@ -9,10 +9,10 @@ function NavLogin() {
                     <i className="fa fa-bars"></i>
                 </div>
                 <div className="logo">
-                    <NavLink exact to="/"><h1>XD</h1></NavLink>
+                    <NavLink className="link" exact to="/"><h1>XD</h1></NavLink>
                 </div>
                 <ul className="nav-menu">
-                    <li><NavLink to="/Register" className="nav-menu__links" href="#"><i className="fa fa-user"></i></NavLink></li>
+                    <li><NavLink to="/Sign-up" className="nav-menu__links" href="#"><i className="fa fa-user"></i></NavLink></li>
                 </ul>
             </nav>
         </header>

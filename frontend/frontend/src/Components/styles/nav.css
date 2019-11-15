@@ -1,19 +1,24 @@
 .App-header{  
-  color: #2699FB;
   padding: 10px 35px;
   position: fixed;
   width: 100%;
   background-color: #fff;
   z-index: 100;
 }
+.link,
+.link:hover{
+  text-decoration: none;
+  color: #2699FB;
+}
 .App-header.nav-home{
   background-color: #F1F9FF;
 }
 .App-header.login-header{
-  color: white;
   background-color: #2699FB;
 }
-.App-header.login-header a{
+.App-header.login-header .link h1,
+.App-header.login-header ul li a,
+.App-header.login-header{
   color: white;
 }
 .nav-login{
@@ -40,6 +45,7 @@ nav{
 }
 .search-bar{
   position: relative;
+  color: #2699FB;
 }
 .search-bar i{
   position: absolute;

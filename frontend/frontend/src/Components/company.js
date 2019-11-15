@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import Products from './products/Products'
+import Company from './company/ChooseCompany'
 import NavMenu from './Layout/NavMenu'
 import './styles/nav.css'
-import './styles/products.css'
+import './styles/chooseCompany.css'
 
 
-class products extends Component {
+class company extends Component {
     render() {
         return (
             <>
                 <NavMenu />
-                <Products />
+                <Company />
             </>
         )
     }
 
 }
-export default products;
+export default company;
