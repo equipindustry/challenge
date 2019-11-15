@@ -8,16 +8,15 @@ class CreateProduct extends React.Component {
             price: '',
             discount: ''
         }
-        this.handleInput = this.handleInput.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
+
     }
-    handleInput(e) {
+    handleInput = (e) => {
         const { value, name } = e.target
         this.setState({
             [name]: value
         })
     }
-    handleSubmit(e) {
+    handleSubmit = (e) => {
         e.preventDefault()
         this.props.onAddProduct(this.state)
     }
@@ -46,7 +45,6 @@ class CreateProduct extends React.Component {
                             <input onChange={this.handleInput} type="text" name="discount" placeholder="Discount " />
                         </div>
                     </div>
-
                     <button className="btn btn-product" >CREATE NOW</button>
                 </form>
             </div>

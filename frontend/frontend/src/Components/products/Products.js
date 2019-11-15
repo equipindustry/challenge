@@ -3,9 +3,6 @@ import { products } from './products.json'
 import CreateProduct from './CreateProduct.js';
 import '../styles/updatecompany.css'
 
-
-
-
 class Products extends Component {
     constructor(props) {
         super(props);
@@ -56,7 +53,6 @@ class Products extends Component {
                         <div className="box dos">
                             <h4>Chemifabrik SAC</h4>
                             <p>Excepture sint occaecat cuidatat non proident, sunt in culpa qui officia deserunt</p>
-
                             <a className="add-btn"> <small>Edit Company</small> +</a>
                         </div>
                     </div>
@@ -74,24 +70,15 @@ class Products extends Component {
                         <button to='/CreateProduct' className={"btn " + (this.state.isCreateOpen ? "hide" : "")} onClick={this.showProductsBox.bind(this)} > Create Product</button>
                     </div>
 
-
-
-
                     {this.state.isProductsOpen && <ul className="container-product">
                         {products}
 
                     </ul>}
                     {this.state.isCreateOpen && <CreateProduct onAddProduct={this.addProduct} />}
-
-
-
                 </div>
             </section>
-
         )
     }
-
-
 }
 
 export default Products;

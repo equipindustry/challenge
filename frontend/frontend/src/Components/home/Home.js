@@ -30,12 +30,8 @@ function Home() {
                     <i className="fa fa-arrow-right"></i>
                 </a>
             </div>
-
-
-
         </section>
     )
-
 }
 
 export default Home;

@@ -5,13 +5,10 @@ import { companies } from './companies.json';
 import img from "../../img/img.png";
 import '../styles/updatecompany.css'
 
-
-
 class ChooseCompany extends Component {
     constructor() {
         super();
         const token = localStorage.getItem("token")
-
         let loggedIn = true
         if (token == null) {
             loggedIn = false
@@ -48,7 +45,6 @@ class ChooseCompany extends Component {
                         <Link to="/Products" className="btn btn-card">Choose Company</Link>
                     </div>
                 </article >
-
             )
         })
 

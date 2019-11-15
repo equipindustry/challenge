@@ -1,19 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Login from './login/Login'
-import NavLogin from './login/NavLogin'
+import NavLogin from './Layout/NavLogin'
 import './styles/nav.css'
 import './styles/login.css'
 
-
-class login extends Component {
-    render() {
-        return (
-            <>
-                <NavLogin />
-                <Login />
-            </>
-        )
-    }
-
+function login() {
+    return (
+        <>
+            <NavLogin />
+            <Login />
+        </>
+    )
 }
 export default login;

@@ -65,9 +65,9 @@
     position: absolute;
     height: 2px;
     background-color: #7FC4FD;
-    width: 50%;
+    width: 90%;
     left: 50%;
-    bottom: -10px;
+    bottom: -20px;
     transform: translate(-50%,-50%);
 }
 
