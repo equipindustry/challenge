@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import { products } from './products.json'
 import CreateProduct from './CreateProduct.js';
+import ProductList from './productList'
 import '../styles/updatecompany.css'
+import { connect } from 'react-redux'
 
 class Products extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            products,
             isProductsOpen: true, isCreateOpen: false
         }
-        this.addProduct = this.addProduct.bind(this)
     }
     showCreateBox() {
         this.setState({ isProductsOpen: true, isCreateOpen: false })
@@ -18,33 +17,9 @@ class Products extends Component {
     showProductsBox() {
         this.setState({ isCreateOpen: true, isProductsOpen: false })
     }
-    addProduct(product) {
-        this.setState({
-            products: [...this.state.products, product]
-        })
-    }
-    removeProduct(index) {
-        this.setState({
-            products: this.state.products.filter((e, i) => {
-                return i !== index
-            })
-        })
-    }
     render() {
-        let products = this.state.products.map((product, i) => {
-            return (
-                <li className="single-product" key={i}>
-                    <div className="discount">{product.discount}</div>
-                    <div className="img"></div>
-                    <div className="inner">
-                        <h5>{product.name} N°{i + 1}</h5>
-                        <p>{product.price}</p>
-                        <button className="btn">VIEW DETAILS</button>
-                        <button className="btn" onClick={this.removeProduct.bind(this, i)}>Delete</button>
-                    </div>
-                </li>
-            )
-        })
+
+        const { projects } = this.props
 
         return (
             <section className="home products">
@@ -66,19 +41,22 @@ class Products extends Component {
                 <div className="section-products">
                     <div className="section-products-header">
                         <h3>All Products</h3>
-                        <button to='/CreateProduct' className={"btn " + (this.state.isProductsOpen ? "hide" : "")} onClick={this.showCreateBox.bind(this)} >See Products</button>
-                        <button to='/CreateProduct' className={"btn " + (this.state.isCreateOpen ? "hide" : "")} onClick={this.showProductsBox.bind(this)} > Create Product</button>
+                        <button className={"btn " + (this.state.isProductsOpen ? "hide" : "")} onClick={this.showCreateBox.bind(this)} >See Products</button>
+                        <button className={"btn " + (this.state.isCreateOpen ? "hide" : "")} onClick={this.showProductsBox.bind(this)} > Create Product</button>
                     </div>
 
-                    {this.state.isProductsOpen && <ul className="container-product">
-                        {products}
-
-                    </ul>}
-                    {this.state.isCreateOpen && <CreateProduct onAddProduct={this.addProduct} />}
+                    {this.state.isProductsOpen && <ProductList projects={projects} />}
+                    {this.state.isCreateOpen && <CreateProduct />}
                 </div>
             </section>
         )
     }
 }
 
-export default Products;
+const mapStateToProps = (state) => {
+    return {
+        projects: state.project.products
+    }
+}
+
+export default connect(mapStateToProps)(Products);

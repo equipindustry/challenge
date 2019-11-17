@@ -38,11 +38,11 @@ class CreateProduct extends React.Component {
                     <div className="doble-input">
                         <div className="input-group">
                             <label htmlFor="price">PRICE</label>
-                            <input onChange={this.handleInput} type="text" name="price" placeholder="Price " />
+                            <input onChange={this.handleInput} type="text" name="price" placeholder="Price" />
                         </div>
                         <div className="input-group">
                             <label htmlFor="discount">DISCOUNT</label>
-                            <input onChange={this.handleInput} type="text" name="discount" placeholder="Discount " />
+                            <input onChange={this.handleInput} type="text" name="discount" placeholder="Discount" />
                         </div>
                     </div>
                     <button className="btn btn-product" >CREATE NOW</button>

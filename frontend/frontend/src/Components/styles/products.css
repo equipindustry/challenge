@@ -129,3 +129,33 @@
     display: block;
     text-align: right; 
 }
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F1F9FF;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+}
+.footer ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul li + li{
+    margin-left: 15px;
+}
+.footer ul li a{
+    color: #2699FB;
+}
+.square{
+    border: #2699FB 2px solid;
+    color: #2699FB;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

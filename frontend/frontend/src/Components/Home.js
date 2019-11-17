@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './home/Home'
-import NavHome from './home/NavHome'
+import NavHome from './Layout/NavHome'
 import './styles/nav.css'
 import './styles/home.css'
 
