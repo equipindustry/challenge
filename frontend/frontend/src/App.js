@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import home from "./Components/home";
-import login from "./Components/login";
-import signup from './Components/signup';
-import company from './Components/company';
-import products from './Components/products';
-import profile from './Components/profile';
+import home from "./Components/Home";
+import login from "./Components/Login";
+import signup from './Components/Signup';
+import company from './Components/Company';
+import products from './Components/Products';
+import profile from './Components/Profile';
 import './Components/styles/reset.css'
 
 
