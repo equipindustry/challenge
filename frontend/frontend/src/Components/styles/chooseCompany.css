@@ -1,0 +1,74 @@
+.App2{
+    padding-top: 150px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.company{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 150px;
+    align-items: center;
+}
+
+.company .col-left .inner{
+    width: 400px;
+    color: #2699FB;
+    display: block;
+}
+.inner h2{
+    font-size: 22px;
+    line-height: 0;
+}
+.inner p{
+    font-size: 35px;
+}
+.btn{
+    background-color: #2699FB;
+    border: none;
+    color: #fff;
+    padding: 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn.btn-card{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    grid-gap: 40px;
+    padding: 40px 150px;
+}
+.container .card img{
+    width: 100%;
+}
+.container .card .inner{
+    text-align:center;
+    background-color:#2699FB ;
+    color: #fff;
+    margin-top: -5px;
+    height: 150px;
+    padding-top: 15px;
+}
+.container .card  .inner h3{
+    margin: 0px;
+}
+
+.container .card  .inner p{
+    font-size: 15px;
+    position: relative;
+}
+.container .card  .inner p::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #7FC4FD;
+    width: 90%;
+    left: 50%;
+    bottom: -20px;
+    transform: translate(-50%,-50%);
+}
+
+

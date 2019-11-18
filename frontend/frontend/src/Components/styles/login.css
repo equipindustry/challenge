@@ -1,0 +1,87 @@
+.root-container{
+    display: flex;
+    padding-top: 103px;
+    padding-right: 25px
+}
+.img-container{
+    flex-basis: 50%;
+}
+.img-container img{
+    width: 100%;
+}
+.box-controller{
+    display: flex;
+    margin-top: 50px
+}
+.controller{
+    padding: 5px 15px;
+    background-color: #2699fb;
+    color: white;
+    text-decoration: none   ;
+    cursor: pointer;
+}
+.login{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    margin-top: 50px;
+}
+.inner-container{
+    max-width: 500px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.input-group label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2699FB;
+}
+.input-group input{
+    outline: none;
+    border: 1px solid #2699FB;
+    height: 40px;
+    min-width: 300px;
+    padding: 0 15px;
+    cursor: text;
+    color: #2699FB;
+}
+.input-group input::placeholder{
+    color: #2699FB;
+}
+.box-header{
+    color: #2699FB;
+    margin-bottom: 60px;
+}
+.box-header h3{
+    font-size: 40px;
+    font-family: serif;
+    font-weight: 400;
+    margin: 0;
+}
+.box-header p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.danger-error{
+    color: #ff616f;
+}
+.hide{
+    display: none;
+}
+.box-login .login-btn{
+    margin-top: 30px;
+    color: #2699FB;
+    background-color: #fff;
+    border: 1px solid #2699FB;
+    padding: 12px 35px;
+    transition: all ease .2s;
+}
+.box-login .login-btn:hover{
+    color:#fff;
+    background-color: #2699FB;
+}
